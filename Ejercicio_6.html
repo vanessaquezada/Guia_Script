@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ejer_6</title>
+</head>
+<body>
+  <!--Autor: Vanessa-->
+    <!--
+      Confeccionar una página que tenga dos botones. El primero debe mostrar en un alert el contenido HTML 
+      de la cabecera de la página y el segundo el contenido HTML del cuerpo de la página  
+    -->
+        
+    <button type="button" class="btn btn-outline-info" id="uno">Cabecera</button><br><br>
+    <button type="button" class="btn btn-outline-info" id="dos">CUERPO</button>
+
+    <script>
+     $(document).ready(function(){
+        $("#uno").click(function(){
+          alert($("head").html());
+        });
+
+        $("#dos").click(function(){
+          alert($("body").html());
+        });
+    });
+    </script>
+</body>
+</html>

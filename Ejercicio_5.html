@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ejer_5</title>
+</head>
+<body>
+    <!--Autor: Vanessa-->
+    <!-- Crear una página que contenga dos tablas de 3 filas y 3 columnas cada una con un texto en cada casillero. 
+    Luego al presionar un botón cambiar por la cadena "-" solo el contenido de la primer tabla, dejando intacto 
+    el de la segunda.  -->
+
+    <table class="table table-striped">
+        <thead><tr  > 
+          
+                <td class="fila1">Celda uno</td>
+            
+                <td class="fila2">Celda dos</td>
+            
+                <td class="fila3">Celda tres</td>
+            
+              </tr> </thead>
+            <tr  > 
+          
+              <td class="fila">Celda uno</td>
+          
+              <td class="fila">Celda dos</td>
+          
+              <td class="fila">Celda tres</td>
+          
+            </tr>
+          
+            <tr>
+          
+                <td class="fila">Celda uno</td>
+          
+                <td class="fila">Celda dos</td>
+                
+                <td class="fila">Celda tres</td>
+          
+            </tr>
+            <tr >
+          
+              <td class="fila">Celda uno</td>
+          
+              <td class="fila">Celda dos</td>
+          
+              <td class="fila">Celda tres</td>
+                
+            </tr>
+          
+    </table ><br>
+
+    <table class="table table-striped">
+
+        <tr>
+              
+             <td>Celda uno</td>
+          
+            <td>Celda dos</td>
+                    
+            <td>Celda tres</td>
+              
+        </tr>
+              
+        <tr>
+              
+            <td>Celda uno</td>
+          
+            <td>Celda dos</td>
+                    
+            <td>Celda tres</td>
+              
+        </tr>
+        <tr>
+            <td>Celda uno</td>
+          
+            <td>Celda dos</td>
+                    
+            <td>Celda tres</td>
+                    
+        </tr>
+                      
+    </table> <br>
+    <button type="button" class="btn btn-outline-info" id="uno">Dar clic</button>
+
+    <script>
+    $(document).ready(function(){
+        $("#uno").click(function(){
+            $(".fila").text("----");
+        });
+    });
+    </script>
+</body>
+</html>

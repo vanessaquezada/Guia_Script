@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejer_7</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <!--Autor: Vanessa-->
+  <!-- 7.	Definir una tabla con un conjunto de filas y columnas. 
+        Definir dos estilos, uno para la sección thead y otro para 
+        la sección tbody. Mediante dos botones permitir asociar y 
+        desasociar clases.-->
+        <div class="container">
+          <table class="table table-striped">
+              <thead >
+                  <tr>
+                      <th>Id</th>
+                      <th>Producto</th>
+                      <th>Existencias</th>
+                      <th>opciones</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr id="uno">
+                      <th>001</th>
+                      <th>Coca-Cola</th>
+                      <th>100</th>
+                      <th><button id="asuno" class="btn btn-success">Asociar</button>
+                          <button id="desuno" class="btn btn-danger">Desasociar</button></th>
+                  </tr>
+                  <tr id="dos">
+                      <th>002</th>
+                      <th>Jugo del valle</th>
+                      <th>89</th>
+                      <th><button id="asdos" class="btn btn-success">Asociar</button>
+                          <button id="desdos" class="btn btn-danger">Desasociar</button></th>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+      <script>
+      $(document).ready(function () {
+    $("#asuno").click(function () {
+        $("#uno").css("background-color", "#82E0AA");
+    });
+
+    $("#asdos").click(function () {
+        $("#dos").css("background-color", "#DC7633");
+    });
+
+    $("#desuno").click(function () {
+        $("#uno").css("background-color", "#FDFEFE");
+    });
+
+    $("#desdos").click(function () {
+        $("#dos").css("background-color", "#FDFEFE");
+    });
+});
+
+      </script>
+</body>
+</html>

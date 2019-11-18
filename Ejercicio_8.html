@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ejer_8</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          margin-left: 20%;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;    
+        }
+        </style>
+</head>
+<body>
+  <!--Autor: Vanessa-->
+    <!--Crear una tabla con dos filas y dos columnas, cambiar el color del interior de la casilla cuando 
+        ingresamos con el mouse y regresarla al original cuando salimos. -->
+        <table border="1px">
+            <thead>
+                <tr>               
+                    <td>Celda uno</td>                
+                    <td>Celda dos</td>                
+                  </tr> 
+                </thead>
+                <tr>               
+                  <td>Celda uno</td>              
+                  <td>Celda dos</td>              
+                </tr>              
+        </table >
+
+        <script>
+                $(document).ready(function(){
+                   $("td").mouseover(function(){
+                       $(this).css("background-color","#45B39D");
+                   });
+                   $("td").mouseout (function(){
+                       $(this).css("background-color","White");
+                   });
+               });
+               </script>
+    
+</body>
+</html>

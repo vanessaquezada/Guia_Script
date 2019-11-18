@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ejer_1</title>
+</head>
+<body>
+    <!--Autor: Vanessa-->
+    <!-- 1. Disponer dos párrafos. Capturar el evento click solo del primero utilizando la librería jQuery. -->
+    <p id="uno">
+        Cuando yo tenía seis años vi en un libro sobre la selva virgen que se titulaba 
+        "Historias vividas", una magnífica lámina. Representaba una serpiente boa que se tragaba a una fiera.
+    </p>
+    <p>
+        En el libro se afirmaba: "La serpiente boa se traga su presa entera, sin masticarla. Luego ya no
+        puede moverse y duerme durante los seis meses que dura su digestión".
+    </p>
+
+    <script>
+    var x;
+    x=$(document);
+    x.ready(inicializar);
+
+    function inicializar(){
+        var x;
+        x=$("#uno");
+        x.click(presionar);
+    }
+    function presionar(){
+        var x;
+        x=$(this);
+        x.css("color", "purple");
+    }
+    </script>
+
+    <!-- $(document).ready(function(){
+        $("#parrafo2").click(function(){
+            $(this).css("color","green");
+        });
+    });
+    -->
+</body>
+</html>

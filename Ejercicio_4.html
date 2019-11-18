@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ejer_4</title>
+</head>
+<body>
+    <!--Autor: Vanessa-->
+    <!--Disponer un título de noticia y seguidamente la descripción de la noticia (encerrarlo 
+    en un div con un nombre de clase), repetir esto para tres noticias. Agregar tres botones 
+    que rescaten el nombre de la clase para la descripción de la noticia y cambien su tamaño de fuente. -->
+    <div>
+        <h2>Noticia 1</h2>
+        <p id="descripcion_uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur sapiente quam 
+            nesciunt eaque quidem repudiandae consequatur, facere placeat, cupiditate veritatis ex 
+            rerum vero, doloremque officia exercitationem. Numquam, id voluptatibus?</p>
+            <button type="button" class="btn btn-outline-info" id="uno">Cambiar tamaño</button>
+    </div>
+
+    <div>
+            <h2>Noticia 2</h2>
+            <p id="descripcion_dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur sapiente quam 
+                nesciunt eaque quidem repudiandae consequatur, facere placeat, cupiditate veritatis ex 
+                rerum vero, doloremque officia exercitationem. Numquam, id voluptatibus?</p>
+                <button type="button" class="btn btn-outline-info" id="dos">Cambiar tamaño</button>
+    </div>
+    <div>
+            <h2>Noticia 3</h2>
+            <p id="descripcion_tres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur sapiente quam 
+            nesciunt eaque quidem repudiandae consequatur, facere placeat, cupiditate veritatis ex 
+            rerum vero, doloremque officia exercitationem. Numquam, id voluptatibus?</p>
+            <button type="button" class="btn btn-outline-info" id="tres">Cambiar tamaño</button>
+
+    </div>
+
+    <script>
+            $(document).ready(function(){
+                $("#uno").click(function(){
+                    $("#descripcion_uno").css("font-size","30px");
+                });
+                $("#dos").click(function(){
+                    $("#descripcion_dos").css("font-size","30px");
+                });
+                $("#tres").click(function(){
+                    $("#descripcion_tres").css("font-size","30px");
+                });
+            });
+            </script>
+
+
+</body>
+</html>

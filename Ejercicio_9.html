@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <title>Ejer_9</title>
+</head>
+<body>
+    <!--Autor: Vanessa-->
+    <!-- 9.	Disponer un div de 800x70 píxeles. Al hacer doble clic redimensionarlo a 250x250 píxeles y si se hace doble clic 
+        nuevamente retornar al tamaño 800x70.-->
+
+        <div class="container" style="width: 800px; height: 300px;">
+            <div class="container" id="contenedor" style="width: 800px; height: 70px;">
+                <p id="content">
+                    
+                        Uno de los servicios que más éxito ha tenido en internet ha sido 
+                        la World Wide Web (WWW o la Web), hasta tal punto que es habitual 
+                        la confusión entre ambos términos. La WWW es un conjunto de protocolos 
+                        que permite, de forma sencilla, la consulta remota de archivos de hipertexto. 
+                        Esta fue un desarrollo posterior (1990) y utiliza internet como medio de transmisión.
+                </p>
+            </div>
+        </div>
+        <script>
+                var redimensionado = false;
+                $(document).ready(function(){
+                $("#content").dblclick(function () {
+                    if(!redimensionado){
+                        $("#contenedor").css("width",250);
+                        $("#contenedor").css("height",250);
+                    }
+                    else{
+                        $("#contenedor").css("width",800);
+                        $("#contenedor").css("height",70);
+                    }
+                    redimensionado = !redimensionado;
+            });
+        });
+                </script>
+        </script>
+</body>
+</html>

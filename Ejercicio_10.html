@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ejer_10</title>
+</head>
+<body>
+    <!--Autor: Vanessa-->
+    <!--Confeccionar una página que contenga un div con un conjunto de párrafos. Cuando se presione con el mouse dentro del div 
+        ocultarlo lentamente y cuando esté completamente oculto hacer que aparezca lentamente otro bloque de texto.-->
+        <div class="container" id="contenedor2">
+                <h4 id="uno">
+                        Mi dibujo no era un sombrero. Representaba una serpiente
+                        boa que digiere un elefante. Entonces dibujé el interior de
+                        la serpiente boa para que las personas mayores pudieran
+                        comprender. Los mayores siempre tienen necesidad de
+                        explicaciones.
+                </h4><br>
+        
+                <h4 id="dos" style="display: none;">
+                        Las personas mayores me aconsejaron abandonar el
+                        dibujo de serpientes boas, fueran abiertas o cerradas, y 
+                        poner más interés en la geografía, la historia, el cálculo y
+                        la gramática. De esta manera, a la edad de seis años
+                        abandoné una magnífica carrera de pintor.
+                </h4><br>
+        
+                <h4 id="tres" style="display: none;">
+                        Así, tuve que elegir otro oficio y aprendí a pilotear
+                        aviones. He volado un poco por todo el mundo y, en
+                        efecto, la geografía me ha servido mucho; al primer
+                        vistazo puedo distinguir perfectamente China de Arizona.
+                        Esto es muy útil, sobre todo si se pierde uno durante la
+                        noche.
+                </h4>
+
+                <h4 id="cuatro" style="display: none;">
+                        A lo largo de mi vida he tenido multitud de contactos con
+                        multitud de gente seria. Viví mucho con personas
+                        mayores y las he conocido muy de cerca; pero esto no ha
+                        mejorado mi opinión sobre ellas.
+                </h4>
+
+                <h4 id="cinco" style="display: none;">
+                        Cuando me he encontrado con alguien que parecía lúcido,
+                        he ensayado la experiencia de mostrar mi dibujo número 1
+                        que he conservado siempre. Quería saber si era
+                        verdaderamente un ser comprensivo pero siempre
+                        contestaban: "Es un sombrero". Me abstenía entonces de
+                        hablarles de la serpiente boa, de la selva virgen y de las
+                        estrellas. Poniéndome a su altura, les hablaba de su mundo:
+                        del bridge, del golf, de política y de corbatas. Y la
+                        persona mayor quedaba contentísima de conocer a un
+                        hombre tan razonable.
+                </h4>
+
+
+            </div>
+    
+    <script>
+    $(document).ready(function () {
+
+        //la funcion clic
+    $("#uno").click(function () {
+        //Al dar clic hide va ocultando el contenido 
+        //resive como parametro la velocidad en milisegundos
+        $(this).hide(4000);
+        //show va mostrando el contenido 
+        //resive como parametro la velocidad en milisegundos
+        $("#dos").show(4000);
+    });
+    $("#dos").click(function () {
+        $(this).hide(4000);
+        $("#tres").show(4000);
+    });
+    $("#tres").click(function () {
+        $(this).hide(4000);
+        $("#cuatro").show(4000);
+    });
+    $("#cuatro").click(function () {
+        $(this).hide(4000);
+        $("#cinco").show(4000);
+    });
+    $("#cinco").click(function () {
+        $(this).hide(4000);
+        $("#uno").show(4000);
+    });
+});
+    </script>
+</body>
+</html>

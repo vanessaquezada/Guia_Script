@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ejer_3</title>
+</head>
+<body>
+  <!--Autor: Vanessa-->
+    <!--Confeccionar una página que muestre dos tablas con tres filas cada una. Cambiar 
+    el color de fondo de cada fila de la primer tabla cuando sea presionada con el mouse(evento click). -->
+
+    <table id="uno" border="1px">
+
+            <tr  class="uno"> 
+          
+              <td>Celda 1</td>
+          
+              <td>Celda 2</td>
+          
+              <td>Celda 3</td>
+          
+            </tr>
+          
+            <tr class="uno">
+          
+              <td>Celda 4</td>
+          
+              <td>Celda 5</td>
+          
+              <td>Celda 6</td>
+          
+            </tr>
+            <tr class="uno">
+          
+                    <td>Celda 4</td>
+                
+                    <td>Celda 5</td>
+                
+                    <td>Celda 6</td>
+                
+            </tr>
+          
+    </table ><br>
+
+    <table border="1px">
+
+                <tr>
+              
+                  <td>Celda 1</td>
+              
+                  <td>Celda 2</td>
+              
+                  <td>Celda 3</td>
+              
+                </tr>
+              
+                <tr>
+              
+                  <td>Celda 4</td>
+              
+                  <td>Celda 5</td>
+              
+                  <td>Celda 6</td>
+              
+                </tr>
+                <tr>
+              
+                        <td>Celda 4</td>
+                    
+                        <td>Celda 5</td>
+                    
+                        <td>Celda 6</td>
+                    
+                </tr>
+              
+    </table>
+
+    <script>
+    $(document).ready(function(){
+        $(".uno").click(function(){
+            $(this).css("background-color","red");
+        });
+    });
+    </script>
+</body>
+</html>
